@@ -39,14 +39,11 @@ namespace Lab1
         {
             double answer = 0;
 
-            // code here
-            if (Math.Abs(d) < Math.Abs(f))
+            if (Math.Min(Math.Abs(d), Math.Abs(f)) == Math.Abs(d))
+            {
                 answer = d;
-            else if (Math.Abs(d) == Math.Abs(f) && d<f)
-                answer = d;
-            else 
-                answer = f;
-            // end
+            }
+            else answer = f;
 
             return answer;
         }

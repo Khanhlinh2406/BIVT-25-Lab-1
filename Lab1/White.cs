@@ -40,14 +40,18 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            if (d < 0) 
-                d = -d;
-            if (f < 0)
-                f = -f;
-            if (d < f) { answer = d; }
-            else { answer = f; }
+            if (Math.Abs(d) < Math.Abs(f))
+                return d;
+            else
+                return f;
+            //if (d < 0)
+            //    d = -d;
+            //if (f < 0)
+            //    f = -f;
+            //if (d < f) { answer = d; }
+            //else { answer = f; }
 
-                // end
+            // end
 
             return answer;
         }
@@ -57,7 +61,7 @@ namespace Lab1
 
             // code here
             if (Math.Abs(x) > 1) answer = 1;
-            if (Math.Abs(x) <= 1) answer = 1;
+            if (Math.Abs(x) <= 1) answer = x;
             // end
 
             return answer;
@@ -67,7 +71,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if (x > r || x < -r || y > r || y <-r)
+            if (x*x + y*y == r*r)
                 answer = true;
             //double xyr = x * x + y * y - r * r;
             //answer = xyr <= 0.0001;

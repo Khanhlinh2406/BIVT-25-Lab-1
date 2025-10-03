@@ -28,9 +28,9 @@ namespace Lab1
 
             // code here
             if (a>b)
-            {answer = a;}
+                answer = a;
             if (a<b)
-            {  answer = b; }
+                answer = b; 
             // end
 
             return answer;
@@ -40,12 +40,14 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            if (d < 0) d = -d;
-            if (f < 0) f = -f;
+            if (d < 0) 
+                d = -d;
+            if (f < 0)
+                f = -f;
             if (d < f) { answer = d; }
-            if (d > f) { answer = f; }
-            
-            // end
+            else { answer = f; }
+
+                // end
 
             return answer;
         }
@@ -54,9 +56,8 @@ namespace Lab1
             double answer = 0;
 
             // code here
-            if (x > 1) answer = 1;
-            if (x < -1) answer = 1;
-            if (x > -1 && x < 1) answer = 0;
+            if (Math.Abs(x) > 1) answer = 1;
+            if (Math.Abs(x) <= 1) answer = 1;
             // end
 
             return answer;
@@ -66,8 +67,10 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            double xyr = x * x + y * y - r * r;
-            answer = xyr <= 0.0001;
+            if (x > r || x < -r || y > r || y <-r)
+                answer = true;
+            //double xyr = x * x + y * y - r * r;
+            //answer = xyr <= 0.0001;
             // end
 
             return answer;
@@ -95,7 +98,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            answer = (L < 30 && T + M >= 5 && M % 2 == 0);
+            answer = (L / 10 <= 3 && T + M >= 5 && M % 2 == 0);
             // end
 
             return answer;

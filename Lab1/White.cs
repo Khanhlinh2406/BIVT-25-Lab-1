@@ -7,7 +7,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            bool answer = d > 0;
+            answer = d > 0;
             // end
 
             return answer;
@@ -17,7 +17,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            bool answee = n % 2 == 0;
+            answer = n % 2 == 0;
             // end
 
             return answer;
@@ -67,7 +67,7 @@ namespace Lab1
 
             // code here
             double xyr = x * x + y * y - r * r;
-            bool answer = xyr <= 0.0001;
+            answer = xyr <= 0.0001;
             // end
 
             return answer;
@@ -95,7 +95,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            bool answer = (L < 30 && T + M >= 5 && M % 2 == 0);
+            answer = (L < 30 && T + M >= 5 && M % 2 == 0);
             // end
 
             return answer;

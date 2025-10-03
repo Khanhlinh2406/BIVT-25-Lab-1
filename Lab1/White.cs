@@ -71,7 +71,7 @@ namespace Lab1
             bool answer = false;
 
             // code here
-            if (x*x + y*y == r*r)
+            if (Math.Abs(x*x + y*y - r*r) <= 0.0001)
                 answer = true;
             //double xyr = x * x + y * y - r * r;
             //answer = xyr <= 0.0001;

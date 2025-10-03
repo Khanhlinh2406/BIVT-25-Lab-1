@@ -41,16 +41,11 @@ namespace Lab1
 
             // code here
             if (Math.Abs(d) < Math.Abs(f))
-                return d;
-            else
-                return f;
-            //if (d < 0)
-            //    d = -d;
-            //if (f < 0)
-            //    f = -f;
-            //if (d < f) { answer = d; }
-            //else { answer = f; }
-
+                answer = d;
+            else if (Math.Abs(d) == Math.Abs(f) && d<f)
+                answer = d;
+            else 
+                answer = f;
             // end
 
             return answer;

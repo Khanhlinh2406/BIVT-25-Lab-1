@@ -56,7 +56,7 @@ namespace Lab1
             // code here
             if (x > 1) answer = 1;
             if (x < -1) answer = 1;
-            if (-1 < x < 1) answer = 0;
+            if (x > -1 && x < 1) answer = 0;
             // end
 
             return answer;
